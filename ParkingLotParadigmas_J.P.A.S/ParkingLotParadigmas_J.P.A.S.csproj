@@ -53,6 +53,12 @@
     <Compile Include="IngresarCarro.Designer.cs">
       <DependentUpon>IngresarCarro.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent.Designer.cs">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParkingLot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,8 +67,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SacarCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SacarCarro.Designer.cs">
+      <DependentUpon>SacarCarro.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="IngresarCarro.resx">
       <DependentUpon>IngresarCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent.resx">
+      <DependentUpon>MDIParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParkingLot.resx">
       <DependentUpon>ParkingLot.cs</DependentUpon>
@@ -76,6 +91,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SacarCarro.resx">
+      <DependentUpon>SacarCarro.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -8,6 +8,7 @@ namespace ParkingLotParadigmas_J.P.A.S.Clases
 {
     class Vehicle
     {
+        public bool activo = false;
         public string tipo { get => tipo; set => tipo = value; }
         public string placa { get => placa; set => placa = value; }
         public string marca { get => marca; set => marca = value; }

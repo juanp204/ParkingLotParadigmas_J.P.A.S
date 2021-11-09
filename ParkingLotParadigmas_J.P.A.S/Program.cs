@@ -16,7 +16,7 @@ namespace ParkingLotParadigmas_J.P.A.S
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ParkingLot());
+            Application.Run(new MDIParent());
         }
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ParkingLotParadigmas_J.P.A.S
 {
-    public partial class IngresarCarro : Form
+    public partial class SacarCarro : Form
     {
-        public IngresarCarro()
+        public SacarCarro()
         {
             InitializeComponent();
-        }
-
-        private void Ingresarbtn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
