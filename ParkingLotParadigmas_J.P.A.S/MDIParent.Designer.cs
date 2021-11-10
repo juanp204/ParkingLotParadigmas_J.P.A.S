@@ -39,9 +39,10 @@ namespace ParkingLotParadigmas_J.P.A.S
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1080, 634);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MDIParent";
             this.Text = "MDIParent";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MDIParent_FormClosing);
             this.Load += new System.EventHandler(this.MDIParent_Load);
             this.ResumeLayout(false);
 

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ParkingLotParadigmas_J.P.A.S.Clases;
+using System.IO;
 
 namespace ParkingLotParadigmas_J.P.A.S
 {
@@ -17,15 +19,22 @@ namespace ParkingLotParadigmas_J.P.A.S
             InitializeComponent();
         }
 
+        public Dictionary<int, Vehicle> carros = new Dictionary<int, Vehicle>();
 
-        private void MDIParent_Load(object sender, EventArgs e)
+        public void MDIParent_Load(object sender, EventArgs e)
         {
-            ParkingLot parking = new ParkingLot
+            ParkingLot parkinglot = new ParkingLot(carros)
             {
                 MdiParent = this
             };
-            this.Size = new Size(parking.Size.Width+20, parking.Size.Height+43);
-            parking.Show();
+            this.Size = new Size(parkinglot.Size.Width+20, parkinglot.Size.Height+43);
+            parkinglot.Show();
+        }
+
+        private void MDIParent_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Console.WriteLine("Cerrando...");
+            
         }
     }
 }
