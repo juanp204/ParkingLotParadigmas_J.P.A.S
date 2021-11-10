@@ -176,7 +176,25 @@ namespace ParkingLotParadigmas_J.P.A.S
                 TimeSpan tiempoF = timepo2-vehicle.date;
                 if (vehicle.tipo == "Carro particular")
                 {
-                    MessageBox.Show($"tiene que pagar {(tiempoF.TotalSeconds/60)*50}");
+                    if (vehicle.afiliado_driver)
+                    {
+                        MessageBox.Show($"tiene que pagar {Convert.ToInt64(((tiempoF.TotalSeconds / 60) * 50)-(((tiempoF.TotalSeconds / 60) * 50)*0.1))} pesos");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"tiene que pagar {Convert.ToInt64((tiempoF.TotalSeconds / 60) * 50)} pesos");
+                    }
+                }
+                else
+                {
+                    if (vehicle.afiliado_driver)
+                    {
+                        MessageBox.Show($"tiene que pagar {Convert.ToInt64(((tiempoF.TotalSeconds / 60) * 60) - (((tiempoF.TotalSeconds / 60) * 60) * 0.1))} pesos");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"tiene que pagar {Convert.ToInt64((tiempoF.TotalSeconds / 60) * 60)} pesos");
+                    }
                 }
             }
             else

@@ -25,7 +25,7 @@ namespace ParkingLotParadigmas_J.P.A.S
 
         private void Ingresarbtn_Click(object sender, EventArgs e)
         {
-            if (Tipocbx.Text != "" | Placatbx.Text != "" | Marcatbx.Text != "" | Idencbx.Text != "" | Sexocbx.Text != "")
+            if ((Tipocbx.Text != "") & (Placatbx.Text != "") & (Marcatbx.Text != "") & (Idencbx.Text != "") & (Sexocbx.Text != ""))
             {
                 for(int i = 0; i<10; i++)
                 {
